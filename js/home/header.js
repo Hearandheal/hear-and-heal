@@ -43,7 +43,52 @@ function boostingEnergyCardTransition() {
     }, 800)
 }
 
+//  self-esteem 
+const selfEsteemCardContainer = document.getElementById('selfEsteemCardContainer');
+function selfEsteemCardTransition() {
+    selfEsteemCardContainer.style.right = "17.9%";
+    selfEsteemCardContainer.style.opacity = 1;
+}
+
+// Anxity
+const anxityCardContainer = document.getElementById('anxityCardContainer');
+function anxityCardTransition() {
+    anxityCardContainer.style.left = "24.6%";
+    anxityCardContainer.style.opacity = 1;
+}
+
+
+//  Companion 
+const companionCardContainer = document.getElementById('companionCardContainer');
+function companionCardTransition() {
+    companionCardContainer.style.right = "23.3%";
+    companionCardContainer.style.opacity = 1;
+}
+
+
+// Hyper-active disorder
+const hyperActiveCardContainer = document.getElementById('hyperActiveCardContainer');
+function hyperActiveCardTransition() {
+    hyperActiveCardContainer.style.bottom = "157px";
+    hyperActiveCardContainer.style.opacity = 1;
+}
+
+
+//  Anger Issue 
+const angerIssueCardContainer = document.getElementById('angerIssueCardContainer');
+function angerIssueCardTransition() {
+    angerIssueCardContainer.style.bottom = "192px";
+    angerIssueCardContainer.style.opacity = 1;
+}
+
+
+
 heroimageTrasition();
 risingYourMindTrasition();
 depresssionCardTransition();
 boostingEnergyCardTransition();
+selfEsteemCardTransition();
+anxityCardTransition();
+companionCardTransition();
+hyperActiveCardTransition();
+angerIssueCardTransition();
