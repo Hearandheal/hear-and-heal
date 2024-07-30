@@ -1,8 +1,16 @@
 const heroImageContainer = document.getElementById('heroImageContainer');
+const mentalScoreBtn = document.getElementById('mentalScoreBtn');
 
 function heroimageTrasition() {
     heroImageContainer.style.top = "50%";
     heroImageContainer.style.opacity = "100%";
+
+    setTimeout(() => {
+        mentalScoreBtn.style.transform = "scale(1.3)";
+    }, 1600)
+    setTimeout(() => {
+        mentalScoreBtn.style.transform = "scale(1)";
+    }, 2000)
 }
 
 // Rising Your Mind

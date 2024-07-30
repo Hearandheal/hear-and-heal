@@ -3,13 +3,13 @@
 }
 
 .heroContainer {
-    position: relative !important;
+    position: relative;
     height: 819px;
     width: 100vw;
 }
 
 .heroSubContainer {
-    position: absolute !important;
+    position: absolute;
     background-color: transparent;
     background-image: url('../../assets/home/image/png/circlePattern.png');
     height: 100%;
@@ -40,6 +40,36 @@
     height: 100%;
 }
 
+.mentalScoreBtnContainer {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mentalScoreBtn {
+    width: 340px;
+    height: 59px;
+    border-radius: 60px;
+    padding: 12px 32px;
+    text-align: left;
+    vertical-align: baseline;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    border: solid 2px white;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(0);
+    transition: transform .5s ease-in-out;
+}
+
+#mentalScoreBtn>img {
+    width: 20px;
+    height: 20px;
+}
+
+
 /* Rising Your Mind */
 #risingYourMind {
     position: absolute;
@@ -49,6 +79,7 @@
     opacity: 0;
     transition: left 1.5s ease-in-out, opacity 2s ease-in-out;
 }
+
 .risingYourMindCard {
     width: 217px;
     height: 160px;
@@ -57,17 +88,20 @@
     padding: 30px 27px 29px 29px;
     border-radius: 20px;
 }
-.risingYourMindCard > .text {
+
+.risingYourMindCard>.text {
     margin-bottom: 17px;
     font-weight: 20px;
     font-weight: 600;
 }
+
 #stat {
     margin-bottom: 5px;
     text-align: end;
     font-weight: 16px;
     font-weight: 600;
 }
+
 .indicator {
     position: relative;
     margin: 0;
@@ -76,6 +110,7 @@
     background-color: white;
     border-radius: 4px;
 }
+
 #progressbar {
     position: absolute;
     left: 0;
@@ -96,26 +131,15 @@
     opacity: 0;
     transition: top .7s ease-in-out, opacity 2s ease-in-out;
 }
+
 .depresssionCard {
     width: 217px;
     height: 51px;
-    border-radius: 60px;
     background-color: #79BFFF;
-    padding: 12px 32px;
-    text-align: center;
-    vertical-align: baseline;
 }
-.depresssionCard > .text {
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    vertical-align: baseline;
-}
+
 .depresssionCardIcon {
     color: #045FA0;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 /* Boosting Energy by 100%  */
@@ -128,6 +152,7 @@
     scale: 0;
     transition: scale .8s ease-in-out, opacity 1.5s ease-in-out;
 }
+
 .boostingEnergyCard {
     width: 267px;
     height: 144px;
@@ -137,19 +162,22 @@
     text-align: center;
     vertical-align: baseline;
 }
-.boostingEnergyCard > .text {
+
+.boostingEnergyCard>.text {
     text-align: start;
     margin-bottom: 14px;
     color: #000;
     font-size: 16px;
     font-weight: 500;
 }
+
 .energyBarContainer {
     width: 100%;
     height: 25px;
     border: solid 1px #FFE090;
     border-radius: 6px;
 }
+
 #energyBar {
     width: 0;
     height: 25px;
@@ -168,26 +196,15 @@
     opacity: 1;
     transition: right .7s ease-in-out, opacity 2s ease-in-out;
 }
+
 .selfEsteemCard {
     width: 212px;
     height: 51px;
-    border-radius: 60px;
     background-color: #AEAAE5;
-    padding: 12px 32px;
-    text-align: center;
-    vertical-align: baseline;
 }
-.selfEsteemCard > .text {
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    vertical-align: baseline;
-}
+
 .selfEsteemCardIcon {
     color: #625DB2;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 
@@ -200,26 +217,15 @@
     opacity: 0;
     transition: left 1.2s ease-in-out, opacity 2s ease-in-out;
 }
+
 .anxityCard {
     width: 167px;
     height: 51px;
-    border-radius: 60px;
     background-color: #FFA9C3;
-    padding: 12px 32px;
-    text-align: center;
-    vertical-align: baseline;
 }
-.anxityCard > .text {
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    vertical-align: baseline;
-}
+
 .anxityCardIcon {
     color: #FF4A80;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 
@@ -232,26 +238,15 @@
     opacity: 0;
     transition: right 1s ease-in-out, opacity 2s ease-in-out;
 }
+
 .companionCard {
     width: 212px;
     height: 51px;
-    border-radius: 60px;
     background-color: #FFB59C;
-    padding: 12px 32px;
-    text-align: center;
-    vertical-align: baseline;
 }
-.companionCard > .text {
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    vertical-align: baseline;
-}
+
 .companionCardIcon {
     color: #FF865E;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 /* Hyper-active disorder */
@@ -263,26 +258,15 @@
     opacity: 0;
     transition: bottom 1.2s ease-in-out, opacity 2s ease-in-out;
 }
+
 .hyperActiveCard {
     width: 304px;
     height: 51px;
-    border-radius: 60px;
     background-color: #00E45B;
-    padding: 12px 32px;
-    text-align: center;
-    vertical-align: baseline;
 }
-.hyperActiveCard > .text {
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    vertical-align: baseline;
-}
+
 .hyperActiveCardIcon {
     color: #087B36;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 
@@ -295,24 +279,50 @@
     opacity: 0;
     transition: bottom 1s ease-in-out, opacity 2s ease-in-out;
 }
+
 .angerIssueCard {
     width: 212px;
     height: 51px;
-    border-radius: 60px;
     background-color: #FF6868;
+}
+
+.angerIssueCardIcon {
+    color: #D50000;
+}
+
+/* Comman Code for depresssionCard, selfEsteemCard, anxityCard, companionCard, hyperActiveCard, angerIssueCard */
+.depresssionCard,
+.selfEsteemCard,
+.anxityCard,
+.companionCard,
+.hyperActiveCard,
+.angerIssueCard {
+    border-radius: 60px;
     padding: 12px 32px;
     text-align: center;
     vertical-align: baseline;
 }
-.angerIssueCard > .text {
+
+.depresssionCard>.text,
+.selfEsteemCard>.text,
+.anxityCard>.text,
+.companionCard>.text,
+.hyperActiveCard>.text,
+.angerIssueCard>.text {
     margin: 0;
+    margin-top: -2px;
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     vertical-align: baseline;
 }
+
+.depresssionCardIcon,
+.selfEsteemCardIcon,
+.anxityCardIcon,
+.companionCardIcon,
+.hyperActiveCardIcon,
 .angerIssueCardIcon {
-    color: #D50000;
     font-size: 20px;
     font-weight: 600;
 }
