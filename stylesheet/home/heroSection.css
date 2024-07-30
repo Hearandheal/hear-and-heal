@@ -1,3 +1,38 @@
+.backgroundColor {
+    background-color: #fdfaf5 !important;
+}
+
 .heroContainer {
-    background-image: url();
+    height: 870px;
+    width: 100vw;
+}
+
+.heroSubContainer {
+    position: relative;
+    background-color: transparent;
+    background-image: url('../../assets/home/image/png/circlePattern.png');
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+}
+
+#heroImageContainer {
+    overflow: hidden;
+    width: 590px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: top 1.5s ease-in-out, opacity 2s ease-in-out;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
 }
