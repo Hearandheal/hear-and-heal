@@ -1,3 +1,8 @@
+// Watch screen Width
+const tabScreenTo = window.matchMedia('(max-width: 993px)').matches;
+const tabScreenFrom = window.matchMedia('(min-width: 577px)').matches;
+const mobileScreen = window.matchMedia('(max-width: 577px)').matches;
+
 const heroImageContainer = document.getElementById('heroImageContainer');
 const mentalScoreBtn = document.getElementById('mentalScoreBtn');
 
@@ -28,7 +33,7 @@ function risingYourMindTrasition() {
             count++;
             stat.innerText = `${count}% Done`;
             progressbar.style.width = `${count}%`;
-            if(count == 70) clearInterval(intervalId);
+            if (count == 70) clearInterval(intervalId);
         }, 20);
     }, 1500);
 }
@@ -36,8 +41,16 @@ function risingYourMindTrasition() {
 // depresssionCardContainer
 const depresssionCardContainer = document.getElementById('depresssionCardContainer');
 function depresssionCardTransition() {
-    depresssionCardContainer.style.top = "116px";
+    if (tabScreenFrom && tabScreenTo) {
+        depresssionCardContainer.style.top = "68px";
+    } else if (mobileScreen) {
+        depresssionCardContainer.style.top = "90px";
+    } else {
+        depresssionCardContainer.style.top = "116px";
+    }
     depresssionCardContainer.style.opacity = 1;
+
+
 }
 
 // Boosting Energy by 100% 
@@ -54,14 +67,22 @@ function boostingEnergyCardTransition() {
 //  self-esteem 
 const selfEsteemCardContainer = document.getElementById('selfEsteemCardContainer');
 function selfEsteemCardTransition() {
-    selfEsteemCardContainer.style.right = "17.9%";
+    if (mobileScreen) {
+        selfEsteemCardContainer.style.right = "21.9%";
+    } else {
+        selfEsteemCardContainer.style.right = "17.9%";
+    }
     selfEsteemCardContainer.style.opacity = 1;
 }
 
 // Anxity
 const anxityCardContainer = document.getElementById('anxityCardContainer');
 function anxityCardTransition() {
-    anxityCardContainer.style.left = "24.6%";
+    if (mobileScreen) {
+        anxityCardContainer.style.left = "16%";
+    } else {
+        anxityCardContainer.style.left = "24.6%";
+    }
     anxityCardContainer.style.opacity = 1;
 }
 
@@ -77,7 +98,16 @@ function companionCardTransition() {
 // Hyper-active disorder
 const hyperActiveCardContainer = document.getElementById('hyperActiveCardContainer');
 function hyperActiveCardTransition() {
-    hyperActiveCardContainer.style.bottom = "157px";
+    console.log("tabScreenFrom, tabScreenTo : ", tabScreenFrom, tabScreenTo);
+    console.log("mobileScreen : ", mobileScreen);
+
+    if (tabScreenFrom && tabScreenTo) {
+        hyperActiveCardContainer.style.bottom = "95px";
+    } else if (mobileScreen) {
+        hyperActiveCardContainer.style.bottom = "20px";
+    } else {
+        hyperActiveCardContainer.style.bottom = "157px";
+    }
     hyperActiveCardContainer.style.opacity = 1;
 }
 
@@ -85,7 +115,13 @@ function hyperActiveCardTransition() {
 //  Anger Issue 
 const angerIssueCardContainer = document.getElementById('angerIssueCardContainer');
 function angerIssueCardTransition() {
-    angerIssueCardContainer.style.bottom = "192px";
+    if (tabScreenFrom && tabScreenTo) {
+        angerIssueCardContainer.style.bottom = "110px";
+    } else if (mobileScreen) {
+        angerIssueCardContainer.style.bottom = "48px";
+    } else {
+        angerIssueCardContainer.style.bottom = "192px";
+    }
     angerIssueCardContainer.style.opacity = 1;
 }
 
