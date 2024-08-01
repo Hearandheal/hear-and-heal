@@ -59,12 +59,12 @@
     font-weight: 600 !important;
 }
 
-@media only screen and (max-width: 577px)  {
+@media only screen and (max-width: 576px)  {
     .navContainer {    
         padding: 21px 20px 6px 20px !important;
     }   
 }
-@media only screen and (min-width: 577px) and (max-width: 993px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
     .navContainer {    
         padding: 45px 32px 15.5px 32px !important;
     }   
