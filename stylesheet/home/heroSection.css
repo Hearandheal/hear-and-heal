@@ -329,7 +329,7 @@
 }
 
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 576px) {
     .heroContainer {
         height: 327px;
     }
@@ -356,7 +356,6 @@
         width: 12px;
         height: 12px;
     }
-
 
     /* Rising Your Mind */
     #risingYourMind {
@@ -389,7 +388,6 @@
         height: 4px;
         border-radius: 2px;
     }
-
 
     /* Depression */
     #depresssionCardContainer {
@@ -429,7 +427,6 @@
         border-radius: 2px;
     }
 
-
     /*  self-esteem */
     #selfEsteemCardContainer {
         right: -21.9%;
@@ -439,7 +436,6 @@
     .selfEsteemCard {
         width: 102px;
     }
-
 
     /* Anxity */
     #anxityCardContainer {
@@ -467,7 +463,6 @@
         width: 148px;
     }
 
-
     /*  Anger Issue */
     #angerIssueCardContainer {
         bottom: -48px;        
@@ -476,7 +471,6 @@
     .angerIssueCard {
         width: 102px;
     }
-
 
     .depresssionCard,
     .selfEsteemCard,
@@ -511,7 +505,7 @@
 }
 
 
-@media only screen and (min-width: 577px) and (max-width: 993px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
     .heroContainer {
         height: 435px;
     }
@@ -534,7 +528,6 @@
         width: 12px;
         height: 12px;
     }
-
 
     /* Rising Your Mind */
     #risingYourMind {
@@ -568,7 +561,6 @@
         height: 4px;
         border-radius: 2px;
     }
-
 
     /* Depression */
     #depresssionCardContainer {
@@ -607,7 +599,6 @@
         border-radius: 2px;
     }
 
-
     /*  self-esteem */
     #selfEsteemCardContainer {
         top: 140px;
@@ -616,7 +607,6 @@
     .selfEsteemCard {
         width: 124px;
     }
-
 
     /* Anxity */
     #anxityCardContainer {
@@ -627,7 +617,6 @@
     .anxityCard {
         width: 93px;
     }
-
 
     /*  Companion */
     #companionCardContainer {
@@ -647,7 +636,6 @@
         width: 178px;
     }
 
-
     /*  Anger Issue */
     #angerIssueCardContainer {
         bottom: -110px;
@@ -656,7 +644,6 @@
     .angerIssueCard {
         width: 120px;
     }
-
 
     .depresssionCard,
     .selfEsteemCard,

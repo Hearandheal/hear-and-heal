@@ -1,8 +1,10 @@
 // Watch screen Width
-const tabScreenTo = window.matchMedia('(max-width: 993px)').matches;
-const tabScreenFrom = window.matchMedia('(min-width: 577px)').matches;
-const mobileScreen = window.matchMedia('(max-width: 577px)').matches;
+const tabScreenTo = window.matchMedia('(max-width: 992px)').matches;
+const tabScreenFrom = window.matchMedia('(min-width: 576px)').matches;
+const mobileScreen = window.matchMedia('(max-width: 576px)').matches;
 
+
+// Hero Image
 const heroImageContainer = document.getElementById('heroImageContainer');
 const mentalScoreBtn = document.getElementById('mentalScoreBtn');
 
