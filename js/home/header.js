@@ -100,9 +100,6 @@ function companionCardTransition() {
 // Hyper-active disorder
 const hyperActiveCardContainer = document.getElementById('hyperActiveCardContainer');
 function hyperActiveCardTransition() {
-    console.log("tabScreenFrom, tabScreenTo : ", tabScreenFrom, tabScreenTo);
-    console.log("mobileScreen : ", mobileScreen);
-
     if (tabScreenFrom && tabScreenTo) {
         hyperActiveCardContainer.style.bottom = "95px";
     } else if (mobileScreen) {
