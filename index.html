@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +11,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script src="./js/home/header.js" defer></script>
-    <script src="./js/home/sectionTwo.js" defer ></script>
+    <script src="./js/home/servicesSection.js" defer></script>
 
     <link rel="stylesheet" href="./stylesheet/layout/navigation.css">
     <link rel="stylesheet" href="./stylesheet/home/heroSection.css">
-    <link rel="stylesheet" href="./stylesheet/home/sectionOne.css">
-    <link rel="stylesheet" href="./stylesheet/home/sectionTwo.css">
+    <link rel="stylesheet" href="./stylesheet/home/bestProfessionalinTown.css">
+    <link rel="stylesheet" href="./stylesheet/home/servicesSection.css">
+    <link rel="stylesheet" href="./stylesheet/home/testimonial.css">
+    <link rel="stylesheet" href="./stylesheet/home/callToAction.css">
+    <link rel="stylesheet" href="./stylesheet/layout/footer.css">
 </head>
 
 
@@ -259,8 +261,8 @@
         </header>
 
         <main class="backgroundColor container-fluid">
-            <!-- section One -->
-            <section id="sectionOne" class="row sectionOne">
+            <!-- Best Professional In Town Section -->
+            <section id="bestProfessionalinTown" class="row bestProfessionalinTown">
                 <div class="leftContainer col-12 col-sm-6">
                     <div class="namasteWomen">
                         <img src="./assets/home/image/png/Side view of woman meditating outdoors.png" alt="">
@@ -307,8 +309,8 @@
                 </div>
             </section>
 
-            <!-- Section Two -->
-            <section id="sectionTwo" class="row sectionTwo">
+            <!-- Services Section -->
+            <section id="servicesSection" class="row servicesSection">
                 <div class="sectionHead col-12">
                     <h2 class="headingColor"><span>✨ </span><span>New service added to the list</span></h2>
                     <p class="textColor">We are excited to announce the addition of several new services designed to
@@ -345,14 +347,196 @@
 
                         </div>
                     </div>
+                    <div id="sleepTherapy" class="serviceContainer">
+                        <div class="verticalBar"></div>
+                        <div class="service">
+                            <h3 class="headingColor heading">Sleep Therapy</h3>
+                            <p class="textColor description">Treatments and approaches designed to help individuals
+                                improve their sleep quality.</p>
+                            <span><button>Learn More </button><i class="bi bi-arrow-right-short"></i></span>
+
+                        </div>
+                    </div>
 
                 </div>
                 <div class="rightContainer col-12 col-sm-6">
                     <img id="serviceImg" src="./assets/home/image/jpeg/Physio image.jpg" alt="">
                 </div>
             </section>
-            
+
+            <!-- Testimonial Section -->
+            <section id="" class="row testimonial">
+                <div class="col-12 testimonialHeading">
+                    <h4 class="headingColor">We <span class="helped">Helped 🤝</span><span
+                            class="numStat">10,000+</span> People Around the Globe</h4>
+                </div>
+                <div class="col-12 testimonialTextContainer">
+                    <p class="headingColor">Lorem ipsum dolor sit amet consectetur. Ut volutpat arcu amet leo tortor
+                        quis sodales. Maecenas quis ut non senectus donec dignissim. Volutpat duis felis pellentesque
+                        mattis tincidunt scelerisque libero. Dolor felis donec viverra morbi etiam eget. Molestie donec
+                        faucibus imperdiet feugiat aliquet dolor tellus suspendisse. Etiam eros massa sed hac lacus
+                        tortor. Malesuada proin ipsum varius ipsum nisl amet curabitur. Nullam faucibus eu erat eget
+                        purus. Pretium elit vestibulum nisl vulputate ac.</p>
+                </div>
+                <div class="col-12 testimonialUserDetailsContainer">
+                    <div class="avatarContainer">
+                        <img class="avatar" src="./assets/home/image/png/userAvatar.png" alt="">
+                    </div>
+                    <p class="name headingColor">Candice Wu</p>
+                    <p class="title">Product Manager, Sisyphus</p>
+                </div>
+            </section>
+
+            <!-- callToAction -->
+            <section id="" class="row callToAction">
+                <div class="callToActionCard col-12">
+                    <div class="row" style="height: 100%;">
+                        <div class="ctaContentContainer col-12 col-sm-6">
+                            <div class="ctaContent">
+                                <h2 class="heading">Get your first session</h2>
+                                <h2 class="subheading">100% FREE</h2>
+                                <button class="ctaBtn">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="ctaDisplayContainer col-12 col-sm-6">
+                            <div class="feedbackCardContainer">
+                                <div class="feedbackCard">
+                                    <div class="avatarContainer">
+                                        <img class="avatar" src="./assets/home/image/png/userAvatar.png" alt="">
+                                    </div>
+                                    <span>My mental peace got Re-stored, feeling blissed 😀💖</span>
+                                </div>
+                                <div class="feedbackCard">
+                                    <div class="avatarContainer">
+                                        <img class="avatar" src="./assets/home/image/png/userAvatar.png" alt="">
+                                    </div>
+                                    <span>Just attended 2 session, feeling confidence in myself. 💪🔥</span>
+                                </div>
+                                <div class="feedbackCard">
+                                    <div class="avatarContainer">
+                                        <img class="avatar" src="./assets/home/image/png/userAvatar.png" alt="">
+                                    </div>
+                                    <span>Feeling so much better than before, thank you.🥰🤝</span>
+                                </div>
+                                <div class="feedbackCard">
+                                    <div class="avatarContainer">
+                                        <img class="avatar" src="./assets/home/image/png/userAvatar.png" alt="">
+                                    </div>
+                                    <span>Amazing sessions, really suggest hear and heal.</span>
+                                </div>
+                            </div>
+                            <img class="" src="./assets/home/image/png/Side view woman meditating in nature.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer class="layoutFooter">
+            <div class="row footerTop">
+                <div class="col-12 col-sm-7">
+                    <h2 class="heading">Get notified when we launch</h2>
+                    <p class="subheading">Stay up to date with the latest news, announcements, and articles.</p>
+                </div>
+                <div class="col-12 col-sm-5 d-flex flex-column flex-sm-row justify-content-end">
+                    <input class="emailInput" placeholder="Enter your email" type="email" name="email" id="email">
+                    <button class="subscribeBtn">Subscribe</button>
+                </div>
+            </div>
+            <div class="row footerBottom">
+                <div class="col-12 col-sm-4">
+                    <div class="row companyIdentiy d-none d-sm-block">
+                        <div class="col-12">
+                            <img class="footerlogo" src="./assets/home/image/png/footerlogo.png" alt="">
+                            <h4 class="addressLabel">Address</h4>
+                            <p class="address">KMS Arcade #299, 1st Block, 2nd Main Rd, RT Nagar, Bengaluru - 560032</p>
+                        </div>
+                    </div>
+                    <div class="row copyright d-none d-sm-block">
+                        <p>© 2024 Hear and Heal. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8">
+                    <div class="row footerLinks">
+                        <div class="col-6 col-sm-6">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <h5>Services</h5>
+                                    <div>
+                                        <a href="#">Individual</a>
+                                        <a href="#">Relationship</a>
+                                        <a href="#">Group Therapy</a>
+                                        <a href="#">Geriatrics</a>
+                                        <a href="#">Physiotherapy</a>
+                                        <a href="#">Cupping Therapy</a>
+                                        <a href="#">Diet and Nutrition</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                                    <h5>Team</h5>
+                                    <div>
+                                        <a href="#">About us</a>
+                                        <a href="#">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <h5>Resources</h5>
+                                    <div>
+                                        <a href="#">Blog</a>
+                                        <a href="#">Newsletter</a>
+                                        <a href="#">Support Groups</a>
+                                        <a href="#">WhatsApp Community</a>
+                                        <a href="#">Bootcamps</a>
+                                        <a href="#">Internships</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                                    <h5>Legal</h5>
+                                    <div>
+                                        <a href="#">Terms and Conditions</a>
+                                        <a href="#">Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emergencyHelpline">
+                            <h5>Emergency Helpline</h5>
+                            <p>NIMHANS 080 2699 5573</p>
+                        </div>
+                    </div>
+                    <div class="row socialMedia  d-none d-sm-block">
+                        <div class="col-12">
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 footerBottomMobileScreen d-block d-sm-none">
+                    <div class="row">
+                        <div class="col-12 socialMedia">
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                        
+                        <div class="divider">
+                        </div>
+                        <img class="footerlogo" src="./assets/home/image/png/footerlogo.png" alt="">
+                        <p>© 2024 Hear and Heal. All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
