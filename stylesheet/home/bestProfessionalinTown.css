@@ -1,4 +1,4 @@
-.sectionOne {
+.bestProfessionalinTown {
     padding: 123px 80px 0 80px;
     /* opacity: 0;
     transition: opacity 1.5s ease-in-out; */
@@ -200,7 +200,7 @@
 
 @media only screen and (max-width: 576px) {
     
-    .sectionOne {
+    .bestProfessionalinTown {
         display: flex;
         flex-direction: column-reverse;
         padding: 48px 14px 0 14px;
@@ -288,7 +288,7 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
-    .sectionOne {
+    .bestProfessionalinTown {
         padding: 64px 37px 0 37px;
     }
     
