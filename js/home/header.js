@@ -125,13 +125,15 @@ function angerIssueCardTransition() {
 }
 
 
+window.addEventListener('load', () => {
+    heroimageTrasition();
+    risingYourMindTrasition();
+    depresssionCardTransition();
+    boostingEnergyCardTransition();
+    selfEsteemCardTransition();
+    anxityCardTransition();
+    companionCardTransition();
+    hyperActiveCardTransition();
+    angerIssueCardTransition();
+})
 
-heroimageTrasition();
-risingYourMindTrasition();
-depresssionCardTransition();
-boostingEnergyCardTransition();
-selfEsteemCardTransition();
-anxityCardTransition();
-companionCardTransition();
-hyperActiveCardTransition();
-angerIssueCardTransition();
