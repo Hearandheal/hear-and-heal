@@ -1,3 +1,4 @@
+
 // Watch screen Width
 const tabScreenTo = window.matchMedia('(max-width: 992px)').matches;
 const tabScreenFrom = window.matchMedia('(min-width: 576px)').matches;
@@ -126,14 +127,18 @@ function angerIssueCardTransition() {
 
 
 window.addEventListener('load', () => {
-    heroimageTrasition();
-    risingYourMindTrasition();
-    depresssionCardTransition();
-    boostingEnergyCardTransition();
-    selfEsteemCardTransition();
-    anxityCardTransition();
-    companionCardTransition();
-    hyperActiveCardTransition();
-    angerIssueCardTransition();
+
+    setTimeout(() => {
+        heroimageTrasition();
+        risingYourMindTrasition();
+        depresssionCardTransition();
+        boostingEnergyCardTransition();
+        selfEsteemCardTransition();
+        anxityCardTransition();
+        companionCardTransition();
+        hyperActiveCardTransition();
+        angerIssueCardTransition();
+    }, 3000)
+
 })
 

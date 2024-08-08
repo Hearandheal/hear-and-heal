@@ -1,0 +1,188 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C3DCFF;
+}
+
+.loaderContainer {
+    position: relative;
+}
+
+.meditatingGirl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation-name: girl;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes girl {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.leftLeaf {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -50%) rotate(0);
+    animation-name: leftLeaf;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes leftLeaf {
+    0% {
+        transform: translate(-100%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-100%, -50%) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(-100%, -50%) rotate(0deg);
+    }
+}
+
+.rightLeaf {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, -34%) rotate(0);
+    animation-name: rightLeaf;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes rightLeaf {
+    0% {
+        transform: translate(50%, -34%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(50%, -34%) rotate(-8deg);
+    }
+
+    100% {
+        transform: translate(50%, -34%) rotate(0deg);
+    }
+}
+
+
+.leftLeafSteam {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-170%, -44%) rotate(0);
+    animation-name: leftLeafSteam;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+
+@keyframes leftLeafSteam {
+    0% {
+        transform: translate(-170%, -44%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-170%, -44%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(-170%, -44%) rotate(0deg);
+    }
+}
+
+.rightLeafSteam {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(19%, -56%) rotate(0);
+    animation-name: rightLeafSteam;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes rightLeafSteam {
+    0% {
+        transform: translate(19%, -56%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(19%, -56%) rotate(-8deg);
+    }
+
+    100% {
+        transform: translate(19%, -56%) rotate(0deg);
+    }
+}
+
+.leftDots {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-950%, 130%);
+    animation-name: leftDots;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes leftDots {
+    0% {
+        transform: translate(-950%, 130%);
+    }
+
+    50% {
+        transform: translate(-950%, 300%);
+    }
+
+    100% {
+        transform: translate(-950%, 130%);
+    }
+}
+
+
+.rightDots {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(727%, -400%);
+    animation-name: rightDots;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes rightDots {
+    0% {
+        transform: translate(727%, -400%);
+    }
+
+    50% {
+        transform: translate(727%, -570%);
+    }
+
+    100% {
+        transform: translate(727%, -400%);
+    }
+}
+
+
