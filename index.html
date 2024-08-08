@@ -12,6 +12,7 @@
 
     <script src="./js/home/header.js" defer></script>
     <script src="./js/home/servicesSection.js" defer></script>
+    <script src="./js/home/callToAction.js" defer></script>
 
     <link rel="stylesheet" href="./stylesheet/layout/navigation.css">
     <link rel="stylesheet" href="./stylesheet/home/heroSection.css">
@@ -20,142 +21,406 @@
     <link rel="stylesheet" href="./stylesheet/home/testimonial.css">
     <link rel="stylesheet" href="./stylesheet/home/callToAction.css">
     <link rel="stylesheet" href="./stylesheet/layout/footer.css">
+    <style>
+        /* Loader styles */
+        .loader {
+            border: 16px solid #f3f3f3;
+            /* Light grey */
+            border-top: 16px solid #3498db;
+            /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+
+        /* Animation for loader */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="backgroundColor root">
+    <div id="loader" class="loader"></div>
+    <div class="backgroundColor" id="root">
         <header style="overflow: hidden;">
             <!-- Navigation -->
-            <nav class="navContainer navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navContainer">
+                <div class="logoContainer">
+                    <img src="./assets/home/image/svg/Logo.svg" alt="Head & Heal Logo">
+                </div>
+                <div class="navCenterLinks">
+                    <!-- Services -->
+                    <div class="servicesContainer">
+                        <a class="serviceBtn nav-link p-0 menuText" href="#" role="button"> Services <i
+                                class="chevronDownIcon bi bi-chevron-down"></i></a>
+                        <!-- Services  -->
+                        <div class="serviceDropdownMenuContainer">
+                            <div class="menuOptions">
+                                <h3 class="servicesheading">Services</h3>
+                                <!-- INDIVIDUAL -->
+                                <div class="individual">
+                                    <a class="nav-link p-0 menuText" href="#" role="button"> Individual <i
+                                            class="chevronDownIcon bi bi-chevron-right"></i></a>
 
-                <div class="container-fluid">
-                    <div class="logoContainer">
-                        <img src="./assets/home/image/svg/Logo.svg" alt="Head & Heal Logo">
+                                    <div class="individualMenuOptions">
+                                        <!-- Specific Disorder -->
+                                        <div class="specificDisorder">
+                                            <a class="nav-link p-0 menuText" href="#" role="button"> Specific Disorder
+                                                <i class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                            <div class="specificDisorderMenuOptions">
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Depression </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Eating Disorder
+                                                </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Hypochondriasis
+                                                </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Mood Disorder
+                                                </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Postpartum
+                                                    Depression </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Panic Attacks
+                                                </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Personality
+                                                    Disorder </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Phobias </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Psychosis </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> DTSD </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Schizophrenia
+                                                </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Sleeping
+                                                    Disorder </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Life Crises/ Specific Event -->
+                                        <div class="lifeCrisesSpecificEvent">
+                                            <a class="nav-link p-0 menuText" href="#" role="button"> Life Crises/
+                                                Specific Event <i class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                            <div class="lifeCrisesSpecificEventMenuOptions">
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Abuse </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Crisis
+                                                    Intervention </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Existential
+                                                    Crisis </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Grief </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Trauma </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Dealing With
+                                                    Long-term Illnesses </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Suicidal
+                                                    Tendencies </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Relationship Issues -->
+                                        <div class="relationshipIssues">
+                                            <a class="nav-link p-0 menuText" href="#" role="button"> Relationship Issues
+                                                <i class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                            <div class="relationshipIssuesMenuOptions">
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Behavioural
+                                                    Health </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Improving
+                                                    Communication </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Sexual Intimacy
+                                                    Issues </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> LGBTQ+
+                                                    Counselling </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Career -->
+                                        <div class="career">
+                                            <a class="nav-link p-0 menuText" href="#" role="button"> Career <i
+                                                    class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                            <div class="careerMenuOptions">
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Work-life
+                                                    Balance </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Burnout </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Career
+                                                    Counselling </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- RELATIONSHIP -->
+                                <div class="relationship">
+                                    <a class="nav-link p-0 menuText" href="#" role="button"> Relationship <i
+                                            class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                    <div class="relationshipMenuOptions">
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> General Issues </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Couple Counselling </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Divorce Counselling
+                                        </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Family Counselling </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Improving Communication
+                                        </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Infertility Counselling
+                                        </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Parental Counselling
+                                        </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Postpartum Depression
+                                        </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Pre-Martial Counselling
+                                        </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Sexual Intimacy Issues
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- TEEN and CHILDREN -->
+                                <div class="teenAndChildren">
+                                    <a class="nav-link p-0 menuText" href="#" role="button"> Teen and Children <i
+                                            class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                    <div class="teenAndChildrenMenuOptions">
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Addictions </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Emotional Intelligence
+                                        </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Eating Disorders </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Abuse </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Anxiety </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Depression </a>
+                                        <div class="neurodevelopmentalDisorders">
+                                            <a class="nav-link p-0 menuText" href="#" role="button"> Neurodevelopmental
+                                                Disorders <i class="chevronDownIcon bi bi-chevron-right"></i> </a>
+                                            <div class="neurodevelopmentalDisordersMenuOptions">
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> ADHD </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Autism spectrum
+                                                    disorder </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Cerebral palsy
+                                                </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Communication
+                                                    Disorders </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Conduct
+                                                    disorders </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Intellectual
+                                                    disabilities </a>
+                                                <a class="nav-link p-0 menuText" href="#" role="button"> Learning
+                                                    disorders </a>
+                                            </div>
+                                        </div>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Autism spectrum
+                                            disorder </a>
+                                    </div>
+                                </div>
+
+                                <!-- GROUP THERAPY -->
+                                <div class="groupTherapy">
+                                    <a class="nav-link p-0 menuText" href="#" role="button"> Group Therapy <i
+                                            class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                    <div class="groupTherapyMenuOptions">
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Laughter Therapy </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Art Therapy </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Yoga Therapy </a>
+                                    </div>
+                                </div>
+
+                                <!-- GERIATRICS -->
+                                <div class="geriatrics">
+                                    <a class="nav-link p-0 menuText" href="#" role="button"> Geriatrics <i
+                                            class="chevronDownIcon bi bi-chevron-right"></i></a>
+
+                                    <div class="geriatricsMenuOptions">
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Alzheimer’s </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Parkinson’s </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Dementia </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Chronic Illnesses </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> End of Life Care  </a>
+                                        <a class="nav-link p-0 menuText" href="#" role="button"> Palliative Care
+                                            Counseling </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="yogaImageContainer">
+                                <img class="yogaImage" src="./assets/layout/image/png/yogaImage.png"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- New Services -->
+                    <div class="newServicesContainer">
+                        <a class="nav-link p-0 menuText" href="#" role="button">
+                            <i class="bi bi-stars newServicesStar"></i> &nbsp; New Services <i
+                                class="chevronDownIcon bi bi-chevron-down"></i>
+                        </a>
+                        <div class="newServicesMenuOptions">
+                            <a class="nav-link p-0 menuText" href="#" role="button"> Physiotherapy </a>
+                            <a class="nav-link p-0 menuText" href="#" role="button"> Cupping </a>
+                            <a class="nav-link p-0 menuText" href="#" role="button"> Diet and Nutrition </a>
+                            <a class="nav-link p-0 menuText" href="#" role="button"> Sleep Test </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Assessment -->
+                    <div class="assessmentContainer">
+                        <a class="nav-link p-0 menuText" href="#">
+                            Assessment
+                        </a>
+                    </div>
+                    <!-- Team -->
+                    <div class="teamContainer">
+                        <a class="nav-link p-0 menuText" href="#">
+                            Team
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NAV END Links -->
+                <div class="navEndLinks d-flex">
+                    <!-- Log in -->
+                    <a class="nav-link p-0 px-4 menuText" href="#">
+                        Log in
+                    </a>
+
+                    <!-- Booking Hub -->
+                    <a class="nav-link p-0 menuText bookinghub" href="#">
+                        <i class="bi bi-cloud-fill bookingHubCloudIcon"></i> &nbsp;&nbsp; Booking Hub
+                    </a>
+                </div>
+
+
+
+                <!-- <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <!-- Individual -->
-                            <li class="ps-4 nav-item dropdown">
-                                <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Individual <i class="chevronDownIcon bi bi-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                        <ul class="w-100 navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- Center Nav links ->
+                            <div class="w-75 d-flex justify-content-center">
+                                <!-- Services ->
+                                <li class="ps-4 nav-item dropdown">
+                                    <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"> Services <i
+                                            class="chevronDownIcon bi bi-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu mt-3">
+                                        <div class="order border-0 card mb-3" style="width: 835px;">
+                                            <div class="row g-0">
+                                                <!-- Individual ->
+                                                <div class="col-sm-4 navOptionsContainer">
+                                                    <h3 class="servicesheading">Services</h3>
+                                                    <li class="dropdown-submenu">
+                                                        <a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another submenu action</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav-item dropdown ">
+                                                        <a class="nav-link p-0 menuText" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-label="Individual" aria-expanded="false">
+                                                            Individual <i
+                                                                class="chevronDownIcon bi bi-chevron-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" >
+                                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                                            </li>
+                                                            <li>
+                                                                <hr class="dropdown-divider">
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Something else
+                                                                    here</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </div>
 
-                            <!-- Relationships -->
-                            <li class="ps-4 nav-item dropdown">
-                                <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Relationships <i class="chevronDownIcon bi bi-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                                                <!-- Relationship ->
+                                                <!-- Teen and Children ->
+                                                <!-- Group Therapy ->
+                                                <!-- Geriatrics >
 
-                            <!-- Teen and Children -->
-                            <li class="ps-4 nav-item dropdown">
-                                <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Teen and Children <i class="chevronDownIcon bi bi-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                                                <!-- YOGA Image >
+                                                <div class="col-sm-8 yogaImageContainer">
+                                                    <img class="yogaImage" src="./assets/layout/image/png/yogaImage.png"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li> ->
+                                    </ul>
+                                </li>
 
-                            <!-- Group -->
-                            <li class="ps-4 nav-item dropdown">
-                                <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Group <i class="chevronDownIcon bi bi-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                                <!-- New Services ->
+                                <li class="ps-4 nav-item dropdown">
+                                    <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-stars newServicesStar"></i> &nbsp; New Services <i
+                                            class="chevronDownIcon bi bi-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
 
-                            <!-- Geriatrics -->
-                            <li class="ps-4 nav-item dropdown">
-                                <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Geriatrics <i class="chevronDownIcon bi bi-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                                <!-- Assessment ->
+                                <li class="ps-4 nav-item">
+                                    <a class="nav-link p-0 menuText" href="#">
+                                        Assessment
+                                    </a>
+                                </li>
 
-                            <!-- New Services -->
-                            <li class="ps-4 nav-item dropdown">
-                                <a class="nav-link p-0 menuText" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <i class="bi bi-stars newServicesStar"></i> &nbsp; New Services <i
-                                        class="chevronDownIcon bi bi-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                                <!-- Team ->
+                                <li class="ps-4 nav-item">
+                                    <a class="nav-link p-0 menuText" href="#">
+                                        Team
+                                    </a>
+                                </li>
+                            </div>
 
-                            <!-- Assessment -->
-                            <li class="ps-4 nav-item">
-                                <a class="nav-link p-0 menuText" href="#">
-                                    Assessment
-                                </a>
-                            </li>
+                            <!-- End Nav Links ->
+                            <div class="w-25 d-flex">
+                                <!-- Log in ->
+                                <li class="ps-3 nav-item">
+                                    <a class="nav-link p-0 menuText" href="#">
+                                        Log in
+                                    </a>
+                                </li>
 
-                            <!-- Log in -->
-                            <li class="ps-3 nav-item">
-                                <a class="nav-link p-0 menuText" href="#">
-                                    Log in
-                                </a>
-                            </li>
-
-                            <!-- Booking Hub -->
-                            <li class="nav-item bookinghub">
-                                <a class="nav-link p-0 menuText" href="#">
-                                    <i class="bi bi-cloud-fill bookingHubCloudIcon"></i> &nbsp;&nbsp; Booking Hub
-                                </a>
-                            </li>
+                                <!-- Booking Hub ->
+                                <li class="nav-item bookinghub">
+                                    <a class="nav-link p-0 menuText" href="#">
+                                        <i class="bi bi-cloud-fill bookingHubCloudIcon"></i> &nbsp;&nbsp; Booking Hub
+                                    </a>
+                                </li>
+                            </div>
                         </ul>
 
                     </div>
-                </div>
+                </div> -->
             </nav>
 
             <!-- Hero Section -->
@@ -398,7 +663,7 @@
                             </div>
                         </div>
                         <div class="ctaDisplayContainer col-12 col-sm-6">
-                            <div class="feedbackCardContainer">
+                            <div id="feedbackCardContainer" class="feedbackCardContainer">
                                 <div class="feedbackCard">
                                     <div class="avatarContainer">
                                         <img class="avatar" src="./assets/home/image/png/userAvatar.png" alt="">
@@ -527,7 +792,7 @@
                             <i class="bi bi-youtube"></i>
                             <i class="bi bi-facebook"></i>
                         </div>
-                        
+
                         <div class="divider">
                         </div>
                         <img class="footerlogo" src="./assets/home/image/png/footerlogo.png" alt="">
@@ -542,6 +807,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script defer>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            loader.style.display = 'none';
+            content.style.display = 'block';
+        });
+
+    </script>
 
 </body>
 

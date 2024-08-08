@@ -18,15 +18,66 @@
     color: #475467;
 }
 
-.navContainer {    
+
+/* Navigation Startss */
+
+.navContainer {
     background-color: #fdfaf5 !important;
     padding: 48px 32px 18px 32px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.navCenterLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navCenterLinks>div {
+    padding: 0 12px;
+}
+
+
 .menuText {
+    cursor: pointer;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.5;
+    transform: scale(1);
+    color: #475467;
+    transition: transform .3s ease-in-out;
+}
+
+.menuText:hover {
+    cursor: pointer;
+    color: #0C60AE;
+    transform: scale(1.05);
+}
+
+.navEndLinks .bookinghub {
+    width: 188px;
+    height: 44px;
+    text-align: center;
+    background-color: #101828;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.bookingHubCloudIcon::before {
+    margin-bottom: 2px;
+    padding-left: 8px;
+    vertical-align: bottom;
+    font-size: 18px;
+    font-weight: 600 !important;
 }
 
 .chevronDownIcon::before {
@@ -35,6 +86,238 @@
     font-weight: 600 !important;
 }
 
+
+/* YOGA image */
+.yogaImageContainer {
+    width: 70%;
+    height: 328px;
+    padding: 20px;
+}
+
+.yogaImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.servicesContainer,
+.newServicesContainer {
+    position: relative;
+}
+
+/* Service */
+.menuOptions {
+    width: 30%;
+}
+
+.servicesContainer {
+    width: 90px;
+    height: 25px;
+}
+
+.servicesContainer>a {
+    width: 90px;
+    height: 45px;
+}
+
+.serviceDropdownMenuContainer {
+    width: 835px;
+    height: 380px;
+    position: relative;
+    z-index: 10;
+    backdrop-filter: blur(100px);
+    box-shadow: 6px 6px 15px #9b9b9b42;
+    border-radius: 12px;
+    padding: 20px;
+    display: none;
+}
+
+.servicesContainer:hover .serviceDropdownMenuContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicesheading {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #0C60AE;
+}
+
+.menuOptions {
+    padding: 12px;
+}
+
+.menu {
+    padding-top: 24px !important;
+}
+
+/* INDIVIDUAL, RELATIONSHIP, TEEN and CHILDREN, GROUP THERAPY, GERIATRICS  */
+/* Specific Disorder, Life Crises Specific Event, Relationship Issues, Career */
+.individual,
+.relationship,
+.teenAndChildren,
+.neurodevelopmentalDisorders,
+.groupTherapy,
+.geriatrics {
+    position: relative;
+    width: 100%;
+}
+
+.individual>a,
+.relationship>a,
+.teenAndChildren>a,
+.groupTherapy>a,
+.geriatrics>a {
+    padding: 12px 0 !important;
+}
+
+.individualMenuOptions,
+.relationshipMenuOptions,
+.teenAndChildrenMenuOptions,
+.neurodevelopmentalDisordersMenuOptions,
+.groupTherapyMenuOptions,
+.geriatricsMenuOptions,
+.specificDisorderMenuOptions,
+.lifeCrisesSpecificEventMenuOptions,
+.relationshipIssuesMenuOptions,
+.careerMenuOptions {
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    padding: 12px 22px 22px 22px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: none;
+    box-shadow: 6px 6px 15px #9b9b9b42;
+}
+
+.individualMenuOptions a {
+    padding: 12px 0 !important;
+}
+
+.relationshipMenuOptions a,
+.teenAndChildrenMenuOptions a,
+.neurodevelopmentalDisordersMenuOptions a,
+.groupTherapyMenuOptions a,
+.geriatricsMenuOptions a,
+.specificDisorderMenuOptions a,
+.lifeCrisesSpecificEventMenuOptions a,
+.relationshipIssuesMenuOptions a,
+.careerMenuOptions a {
+    padding: 12px 0 !important;
+    border-bottom: dashed 1px #D0D5DD;
+}
+
+.individual:hover .individualMenuOptions,
+.relationship:hover .relationshipMenuOptions,
+.teenAndChildren:hover .teenAndChildrenMenuOptions,
+.neurodevelopmentalDisorders:hover .neurodevelopmentalDisordersMenuOptions,
+.groupTherapy:hover .groupTherapyMenuOptions,
+.geriatrics:hover .geriatricsMenuOptions,
+.specificDisorder:hover .specificDisorderMenuOptions,
+.lifeCrisesSpecificEvent:hover .lifeCrisesSpecificEventMenuOptions,
+.relationshipIssues:hover .relationshipIssuesMenuOptions,
+.career:hover .careerMenuOptions {
+    display: block;
+}
+
+/* INDIVIDUAL */
+.individualMenuOptions {
+    top: -10px;
+    left: 60%;
+}
+
+/* Specific Disorder, Life Crises Specific Event, Relationship Issues, Career */
+.specificDisorder,
+.lifeCrisesSpecificEvent,
+.relationshipIssues,
+.career {
+    position: relative;
+    background-color: transparent;
+    width: 350px;
+}
+
+.specificDisorder>a,
+.lifeCrisesSpecificEvent>a,
+.relationshipIssues>a,
+.career>a {
+    width: 255px;
+    padding: 12px 0 !important;
+    border-bottom: dashed 1px #D0D5DD;
+}
+
+.specificDisorder>a .chevronDownIcon {
+    padding-left: 112px;
+}
+
+.lifeCrisesSpecificEvent>a .chevronDownIcon {
+    padding-left: 52px;
+}
+
+.relationshipIssues>a .chevronDownIcon {
+    padding-left: 96px;
+}
+
+.career>a .chevronDownIcon {
+    padding-left: 179px;
+}
+
+.specificDisorderMenuOptions,
+.lifeCrisesSpecificEventMenuOptions,
+.relationshipIssuesMenuOptions,
+.careerMenuOptions {
+    left: 82%;
+    top: -24%;
+}
+
+
+/* RELATIONSHIP */
+.relationshipMenuOptions {
+    top: 0px;
+    left: 60%;
+}
+
+/* TEEN and CHILDREN */
+.teenAndChildrenMenuOptions {
+    top: 0px;
+    left: 75%;
+}
+
+/* Neurodevelopmental Disorders */
+.neurodevelopmentalDisorders {
+    width: 350px;
+    background-color: transparent;
+}
+
+.neurodevelopmentalDisorders>a {
+    width: 255px;
+}
+
+.neurodevelopmentalDisorders>a .chevronDownIcon {
+    padding-left: 20px;
+}
+
+.neurodevelopmentalDisordersMenuOptions {
+    top: -8px;
+    left: 82%;
+}
+
+/* GROUP THERAPY */
+.groupTherapyMenuOptions {
+    top: 10px;
+    left: 65%;
+}
+
+/* GERIATRICS */
+.geriatricsMenuOptions {
+    top: -10px;
+    left: 60%;
+}
+
+
+/* New services */
 .newServicesStar::before {
     color: #ffce22;
     padding-left: 4px;
@@ -42,38 +325,45 @@
     font-weight: 600 !important;
 }
 
-.bookinghub {
-    width: 188px;
-    text-align: center;
-    background-color: #101828;
-    margin-top: -10px;
-    border-radius: 60px;
-    margin-left: 16px;
-    padding: 10px 24px;
+.newServicesContainer {
+    position: relative;
+    width: 170px;
+    height: 25px;
 }
 
-.bookinghub>a {
-    color: white;
+.newServicesContainer>a {
+    height: 45px;
 }
 
-.bookinghub>a:hover {
-    color: white;
+.newServicesMenuOptions {
+    width: 300px;
+    position: relative;
+    z-index: 10;
+    padding: 12px 22px 22px 22px;
+    backdrop-filter: blur(100px);
+    box-shadow: 6px 6px 15px #9b9b9b42;
+    border-radius: 12px;
+    display: none;
 }
 
-.bookingHubCloudIcon::before {
-    vertical-align: bottom;
-    padding-left: 4px;
-    font-size: 18px;
-    font-weight: 600 !important;
+.newServicesMenuOptions>a {
+    padding: 12px 0 !important;
+    border-bottom: dashed 1px #D0D5DD;
+
 }
 
-@media only screen and (max-width: 576px)  {
-    .navContainer {    
+.newServicesContainer:hover .newServicesMenuOptions {
+    display: block;
+}
+
+@media only screen and (max-width: 576px) {
+    .navContainer {
         padding: 21px 20px 6px 20px !important;
-    }   
+    }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 992px) {
-    .navContainer {    
+    .navContainer {
         padding: 45px 32px 15.5px 32px !important;
-    }   
+    }
 }

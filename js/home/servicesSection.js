@@ -82,6 +82,6 @@ sleepTherapy.addEventListener('mouseover', () => {
     sleepTherapyButton.style.paddingRight = "10px"
 
     // Service image 
-    serviceImg.setAttribute("src", './assets/home/image/jpeg/Diet and nutrition image.jpg');
+    serviceImg.setAttribute("src", './assets/home/image/jpeg/sleepTherapy.jpg');
 })
 

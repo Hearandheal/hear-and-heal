@@ -84,6 +84,37 @@
     justify-content: space-between;
     align-items: center;
 }
+/* .feedbackCard#card0 {
+    position: absolute;
+    left: 2%;
+    top: 23%;
+    transition: top 1s ease-in-out;
+}
+.feedbackCard#card1 {
+    position: absolute;
+    left: 2%;
+    top: 41%;
+    transition: top 1s ease-in-out;
+}
+.feedbackCard#card2 {
+    position: absolute;
+    left: 2%;
+    top: 59%;
+    transition: top 1s ease-in-out;
+}
+.feedbackCard#card3 {
+    position: absolute;
+    left: 2%;
+    top: 77%;
+    transition: top 1s ease-in-out;
+}
+
+.ctaDisplayContainer .feedbackCard.active {
+    background-color: aquamarine;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+} */
 
 .ctaDisplayContainer .feedbackCardContainer .feedbackCard .avatarContainer {
     width: 40px;
@@ -229,6 +260,8 @@
         padding: 9.3px;
         margin-bottom: 8px;
         border-radius: 5px;
+        transform: translateY(0);
+        transition: transform 1s ease-in-out;
     }
 
     .ctaDisplayContainer .feedbackCardContainer .feedbackCard .avatarContainer {

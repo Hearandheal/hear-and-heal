@@ -38,7 +38,9 @@
     align-items: center;
     justify-content: start;
 }
-
+.servicesSection #sleepTherapy {
+    display: none;
+}
 .servicesSection .serviceContainer .verticalBar {
     width: 4px;
     height: 100%;
@@ -138,6 +140,9 @@
     .servicesSection .serviceContainer {
         height: 120.75px;
     }
+    .servicesSection #sleepTherapy {
+        display: inline-flex;
+    }
 
     .servicesSection .serviceContainer .verticalBar {
         width: 2.32px;
@@ -213,6 +218,10 @@
 
     .servicesSection .serviceContainer {
         height: 120.75px;
+    }
+
+    .servicesSection #sleepTherapy {
+        display: inline-flex;
     }
 
     .servicesSection .serviceContainer .verticalBar {
