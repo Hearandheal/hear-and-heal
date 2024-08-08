@@ -126,8 +126,7 @@ function angerIssueCardTransition() {
 }
 
 
-window.addEventListener('load', () => {
-
+window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         heroimageTrasition();
         risingYourMindTrasition();
@@ -138,7 +137,6 @@ window.addEventListener('load', () => {
         companionCardTransition();
         hyperActiveCardTransition();
         angerIssueCardTransition();
-    }, 3000)
-
+    }, 50);
 })
 
