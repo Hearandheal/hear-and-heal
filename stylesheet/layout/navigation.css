@@ -18,12 +18,32 @@
     color: #475467;
 }
 
+nav.largeScreeen {
+    display: flex;
+}
 
-/* Navigation Startss */
+nav.tabAndMobileScreeen {
+    display: none;
+}
+.navigationDrawer > button {
+    height: 45px;
+    width: 55px;
+    background-color: transparent;
+    border: solid 1px #475467;
+    border-radius: 8px;
+}
+.navigationDrawer .toggleIcon::before {
+    font-size: 30px;
+}
+.navigationDrawer > button:hover .toggleIcon::before {
+    font-size: 32px;
+    color: #0C60AE;
+}
 
+/* Navigation Starts */
 .navContainer {
     background-color: #fdfaf5 !important;
-    padding: 48px 32px 18px 32px !important;
+    padding: 32px 32px 18px 32px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +67,7 @@
     line-height: 1.5;
     transform: scale(1);
     color: #475467;
-    transition: transform .3s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .menuText:hover {
@@ -112,12 +132,12 @@
 }
 
 .servicesContainer {
-    width: 90px;
+    width: 100px;
     height: 25px;
 }
 
 .servicesContainer>a {
-    width: 90px;
+    width: 100px;
     height: 45px;
 }
 
@@ -356,13 +376,33 @@
     display: block;
 }
 
+.navEndLinks {
+    padding-top: 12px;
+}
+
 @media only screen and (max-width: 576px) {
+    nav.largeScreeen {
+        display: none;
+    }
+
+    nav.tabAndMobileScreeen {
+        display: flex;
+    }
+
     .navContainer {
         padding: 21px 20px 6px 20px !important;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
+    nav.largeScreeen {
+        display: none;
+    }
+
+    nav.tabAndMobileScreeen {
+        display: flex;
+    }
+
     .navContainer {
         padding: 45px 32px 15.5px 32px !important;
     }

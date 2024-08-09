@@ -1,7 +1,5 @@
 .bestProfessionalinTown {
     padding: 123px 80px 0 80px;
-    /* opacity: 0;
-    transition: opacity 1.5s ease-in-out; */
 }
 
 /* Left Container */
@@ -19,13 +17,35 @@
     position: absolute;
     top: 56px;
     left: 29px;
+    transform: translate(0, 0);
     z-index: 1;
+}
+
+.namasteWomen:hover {
+    animation-name: namasteWomen;
+    animation-duration: 1.3s;
+    animation-iteration-count: 2;
+}
+
+@keyframes namasteWomen {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-5%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .namasteWomen>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 9.94px;
 }
 
 .activeMentalPeace {
@@ -40,6 +60,26 @@
     position: absolute;
     top: 0px;
     left: 42.7%;
+}
+
+.activeMentalPeace:hover {
+    animation-name: activeMentalPeace;
+    animation-duration: 1.3s;
+    animation-iteration-count: 2;
+}
+
+@keyframes activeMentalPeace {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -10%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .activeMentalPeace>p {
@@ -70,6 +110,26 @@
     color: #fff;
 }
 
+.professionalMentalHealth:hover {
+    animation-name: professionalMentalHealth;
+    animation-duration: 1.3s;
+    animation-iteration-count: 2;
+}
+
+@keyframes professionalMentalHealth {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(5%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 .professionalMentalHealth>img {
     width: 100%;
     height: 100%;
@@ -81,20 +141,55 @@
     height: 88px;
     padding: 23px 19px 21px 21px;
     border-radius: 10px;
-    background-color: #52B9A0;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     position: absolute;
     top: 364px;
     left: 29px;
+    background: linear-gradient(45deg, rgba(16, 24, 40, 0.8661310959930848) 0%, rgba(0, 0, 0, 0.5) 3%, rgba(255, 255, 255, 0) 50%), url('../../assets/home/gif/soundWaves.gif');
 }
 
 .audioContainer>audio {
-    width: 100%;
-    height: 42px;
-    object-fit: cover;
+    display: none;
 }
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play,
+#pause {
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    border: solid 2px #fff;
+    background-color: transparent;
+}
+
+#pause {
+    display: none;
+}
+
+#play>i,
+#pause>i {
+    position: relative;
+}
+
+#play>i::before,
+#pause>i::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+
 
 .nShape {
     width: 43.6%;
@@ -115,6 +210,7 @@
 .rightContainer {
     padding-left: 96px;
 }
+
 .btn {
     display: flex;
     justify-content: center;
@@ -123,10 +219,12 @@
     border: solid 1px #D0D5DD;
     border-radius: 10px;
 }
+
 .btn:hover {
     border: solid 1px #D0D5DD;
     cursor: unset;
 }
+
 .btn .innerContent {
     padding: 2px 8px;
     display: flex;
@@ -136,6 +234,7 @@
     border-radius: 6px;
 
 }
+
 .btn .outerDot {
     width: 12px;
     height: 12px;
@@ -155,22 +254,26 @@
     background-color: #256FB3;
     border-radius: 50%;
 }
-.btn .text  {
+
+.btn .text {
     font-size: 14px;
     font-weight: 500;
 }
+
 .btn .iconArrow {
     padding-left: 10px;
     padding-right: 8px;
     color: #667085;
 }
+
 .btn .iconArrow::before {
     font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
+
 .rightContainer .content h1 {
     color: #101828;
     margin-top: 16px;
@@ -178,6 +281,7 @@
     line-height: 1.36;
     font-weight: 600;
 }
+
 .rightContainer .content p {
     color: #475467;
     margin-top: 24px;
@@ -186,6 +290,7 @@
     line-height: 30px;
     font-weight: 400;
 }
+
 .rightContainer .content .knowMoreBtn {
     font-size: 16px;
     font-weight: 600;
@@ -199,18 +304,18 @@
 
 
 @media only screen and (max-width: 576px) {
-    
+
     .bestProfessionalinTown {
         display: flex;
         flex-direction: column-reverse;
         padding: 48px 14px 0 14px;
     }
-    
+
     /* Left Container */
     .leftContainer {
         height: 299px;
     }
-    
+
     .namasteWomen {
         width: 43.06%;
         height: 151px;
@@ -218,18 +323,22 @@
         top: 28.45px;
         left: 14px;
     }
-    
+
+    .namasteWomen>img {
+        border-radius: 5px;
+    }
+
     .activeMentalPeace {
         width: 39.64%;
         height: 84.7px;
         border-radius: 5px;
         left: 41.7%;
     }
-    
+
     .activeMentalPeace>p {
         font-size: 9.27px;
     }
-    
+
     .professionalMentalHealth {
         width: 49.5%;
         height: 207.96px;
@@ -239,11 +348,11 @@
         top: 91.65px;
         left: 49.7%;
     }
-    
+
     .professionalMentalHealth>p {
         width: 62.3%;
     }
-    
+
     .audioContainer {
         width: 43%;
         height: 44px;
@@ -251,12 +360,39 @@
         border-radius: 5px;
         top: 185.15px;
         left: 14.75px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
-    
+
     .audioContainer>audio {
         height: 21px;
     }
-    
+
+    #play,
+    #pause {
+        height: 37px;
+        width: 37px;
+        border-radius: 50%;
+        border: solid 2px #fff;
+        background-color: transparent;
+    }
+
+    #play,
+    #pause {
+        height: 17px;
+        width: 17px;
+    }
+
+    #play>i::before {
+        font-size: 12px;
+        transform: translate(-43%, -49%);
+    }
+
+    #pause>i::before {
+        font-size: 12px;
+    }
+
     .nShape {
         width: 42.6%;
         height: 63.06px;
@@ -264,39 +400,42 @@
         top: 236.52px;
         left: 16.27px;
     }
-    
+
     /* Right Container  */
     .rightContainer {
         padding-left: 0px;
         margin-bottom: 32.11px;
     }
+
     .rightContainer .content h1 {
         margin-top: 7px;
         font-size: 24px;
     }
+
     .rightContainer .content p {
         margin-top: 10.5px;
         font-size: 14px;
         line-height: 1.5;
     }
+
     .rightContainer .content .knowMoreBtn {
         margin-top: 21px;
         font-size: 12px;
         padding: 12px 24px;
         border-radius: 3.5px;
-    }    
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
     .bestProfessionalinTown {
         padding: 64px 37px 0 37px;
     }
-    
+
     /* Left Container */
     .leftContainer {
         height: 340px;
     }
-    
+
     .namasteWomen {
         width: 43%;
         height: 172.04px;
@@ -304,18 +443,22 @@
         top: 32.39px;
         left: 17px;
     }
-    
+
+    .namasteWomen>img {
+        border-radius: 6px;
+    }
+
     .activeMentalPeace {
         width: 39.6%;
         height: 96.46px;
         border-radius: 6px;
         left: 41.7%;
     }
-    
+
     .activeMentalPeace>p {
         font-size: 9.27px;
     }
-    
+
     .professionalMentalHealth {
         width: 50.5%;
         height: 236.83px;
@@ -324,11 +467,11 @@
         top: 104.38px;
         left: 49.6%;
     }
-    
+
     .professionalMentalHealth>p {
         width: 62.3%;
     }
-    
+
     .audioContainer {
         width: 43%;
         height: 50px;
@@ -336,12 +479,30 @@
         border-radius: 6px;
         top: 210.85px;
         left: 16.8px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
-    
+
     .audioContainer>audio {
         height: 24.09px;
     }
-    
+
+    #play,
+    #pause {
+        height: 20px;
+        width: 20px;
+    }
+
+    #play>i::before {
+        font-size: 15px;
+        transform: translate(-43%, -49%);
+    }
+
+    #pause>i::before {
+        font-size: 15px;
+    }
+
     .nShape {
         width: 42.5%;
         height: 71px;
@@ -349,20 +510,23 @@
         top: 269.35px;
         left: 18.53px;
     }
-    
+
     /* Right Container  */
     .rightContainer {
         padding-left: 55.6px;
     }
+
     .rightContainer .content h1 {
         margin-top: 9.27px;
         font-size: 32px;
     }
+
     .rightContainer .content p {
         margin-top: 14px;
         font-size: 12px;
         line-height: 17.4px;
     }
+
     .rightContainer .content .knowMoreBtn {
         font-size: 12px;
         margin-top: 27.8px;

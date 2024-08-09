@@ -27,10 +27,10 @@ const cardsHtml = [
 
 // const cardIds = ['card0', 'card1', 'card2', 'card3',]
 document.addEventListener('DOMContentLoaded', () => {
-    const cardCount = cardIds.length ;
-    let cardNumber = 0;
-    const feedbackCardContainer = document.getElementById('feedbackCardContainer');
-    cons
+    // const cardCount = cardIds.length ;
+    // let cardNumber = 0;
+    // const feedbackCardContainer = document.getElementById('feedbackCardContainer');
+    
     // setInterval(() => {
     //     cardNumber = cardNumber % cardCount;
     //     const feedbackCard = document.getElementById(`card${cardNumber}`);

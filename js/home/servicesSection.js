@@ -14,7 +14,11 @@ const cuppyTherapyButton = document.querySelector('#cuppyTherapy button');
 const dietAndNeutritionButton = document.querySelector('#dietAndNeutrition button');
 const sleepTherapyButton = document.getElementById('sleepTherapy');
 
-const serviceImg = document.getElementById('serviceImg');
+
+const physioImg = document.getElementById('physioImg');
+const cuppingImg = document.getElementById('cuppingImg');
+const dietImg = document.getElementById('dietImg');
+const sleepImg = document.getElementById('sleepImg');
 
 
 physiotherapy.addEventListener('mouseover', () => {
@@ -31,7 +35,18 @@ physiotherapy.addEventListener('mouseover', () => {
     sleepTherapyButton.style.paddingRight = "0"
 
     // Service image 
-    serviceImg.setAttribute("src", './assets/home/image/jpeg/Physio image.jpg');
+    physioImg.style.opacity = 1;
+    physioImg.style.zIndex= 1;
+    physioImg.style.visibility = "visible";
+    cuppingImg.style.opacity = 0;
+    cuppingImg.style.zIndex= -1;
+    cuppingImg.style.visibility = "hidden";
+    dietImg.style.opacity = 0;
+    dietImg.style.zIndex= -1;
+    dietImg.style.visibility = "hidden";
+    sleepImg.style.opacity = 0;
+    sleepImg.style.zIndex= -1;
+    sleepImg.style.visibility = "hidden";
 })
 
 cuppyTherapy.addEventListener('mouseover', () => {
@@ -48,7 +63,18 @@ cuppyTherapy.addEventListener('mouseover', () => {
     sleepTherapyButton.style.paddingRight = "0"
 
     // Service image 
-    serviceImg.setAttribute("src", './assets/home/image/jpeg/Cupping Image.jpg');
+    physioImg.style.opacity = 0;
+    physioImg.style.zIndex = -1;
+    physioImg.style.visibility = "hidden";
+    cuppingImg.style.opacity = 1;
+    cuppingImg.style.zIndex = 1;
+    cuppingImg.style.visibility = "visible";
+    dietImg.style.opacity = 0;
+    dietImg.style.zIndex = -1;
+    dietImg.style.visibility = "hidden";
+    sleepImg.style.opacity = 0;
+    sleepImg.style.zIndex = -1;
+    sleepImg.style.visibility = "hidden";
 })
 
 dietAndNeutrition.addEventListener('mouseover', () => {
@@ -65,7 +91,18 @@ dietAndNeutrition.addEventListener('mouseover', () => {
     sleepTherapyButton.style.paddingRight = "0"
 
     // Service image 
-    serviceImg.setAttribute("src", './assets/home/image/jpeg/Diet and nutrition image.jpg');
+    physioImg.style.opacity = 0;
+    physioImg.style.zIndex = -1;
+    physioImg.style.visibility = "hidden";
+    cuppingImg.style.opacity = 0;
+    cuppingImg.style.zIndex = -1;
+    cuppingImg.style.visibility = "hidden";
+    dietImg.style.opacity = 1;
+    dietImg.style.zIndex = 1;
+    dietImg.style.visibility = "visible";
+    sleepImg.style.opacity = 0;
+    sleepImg.style.zIndex = -1;
+    sleepImg.style.visibility = "hidden";
 })
 
 sleepTherapy.addEventListener('mouseover', () => {
@@ -82,6 +119,17 @@ sleepTherapy.addEventListener('mouseover', () => {
     sleepTherapyButton.style.paddingRight = "10px"
 
     // Service image 
-    serviceImg.setAttribute("src", './assets/home/image/jpeg/sleepTherapy.jpg');
+    physioImg.style.opacity = 0;
+    physioImg.style.zIndex = -1;
+    physioImg.style.visibility = "hidden";
+    cuppingImg.style.opacity = 0;
+    cuppingImg.style.zIndex = -1;
+    cuppingImg.style.visibility = "hidden";
+    dietImg.style.opacity = 0;
+    dietImg.style.zIndex = -1;
+    dietImg.style.visibility = "hidden";
+    sleepImg.style.opacity = 1;
+    sleepImg.style.zIndex = 1;
+    sleepImg.style.visibility = "visible";
 })
 

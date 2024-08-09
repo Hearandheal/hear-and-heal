@@ -71,6 +71,7 @@
     justify-content: end;
     align-items: start;
     padding-bottom: 26px;
+    background-color: linear-gradient();
 }
 
 .ctaDisplayContainer .feedbackCard {
@@ -84,37 +85,6 @@
     justify-content: space-between;
     align-items: center;
 }
-/* .feedbackCard#card0 {
-    position: absolute;
-    left: 2%;
-    top: 23%;
-    transition: top 1s ease-in-out;
-}
-.feedbackCard#card1 {
-    position: absolute;
-    left: 2%;
-    top: 41%;
-    transition: top 1s ease-in-out;
-}
-.feedbackCard#card2 {
-    position: absolute;
-    left: 2%;
-    top: 59%;
-    transition: top 1s ease-in-out;
-}
-.feedbackCard#card3 {
-    position: absolute;
-    left: 2%;
-    top: 77%;
-    transition: top 1s ease-in-out;
-}
-
-.ctaDisplayContainer .feedbackCard.active {
-    background-color: aquamarine;
-    position: absolute;
-    top: 23%;
-    left: 2%;
-} */
 
 .ctaDisplayContainer .feedbackCardContainer .feedbackCard .avatarContainer {
     width: 40px;
@@ -139,6 +109,15 @@
     font-weight: 400;
 }
 
+#card3 {
+    opacity: .9;
+}
+#card3 {
+    opacity: .7;
+}
+#card4 {
+    opacity: .5;
+}
 
 @media only screen and (max-width: 576px) {
     .callToAction {
